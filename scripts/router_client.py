@@ -7,7 +7,14 @@ r0 = {
     "password": "cisco",
 }
 
-routers = [("R0", r0)]
+r1 = {
+    "device_type": "cisco_ios",
+    "host": "10.0.0.101",
+    "username": "cisco",
+    "password": "cisco",
+}
+
+routers = [("R0", r0), ("R1", r1)]
 
 for name, config in routers:
     print(f"\n=== {name} Routing Table ===")
